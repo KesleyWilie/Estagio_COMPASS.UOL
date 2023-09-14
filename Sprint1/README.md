@@ -11,3 +11,5 @@ Nessa sprint foi aprendido Sobre Git, Github e Linux, conteúdo bastante importa
 * `git pull` - Atualiza o branchcom as mudanças do repositório remoto.
 
 ### LINUX
+
+[Certificados](CERTIFICADOS/)
