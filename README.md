@@ -4,16 +4,14 @@ Olá! Me chamo Kesley Wilie, moro em Camalaú-PB, tenho 19 anos e atualmente cur
 
 Entusiasta no mundo da tecnologia, estou muito feliz em fazer parte do programa de bolsas da **Comppas UOL** na área de _**AWS Cloud data Engineering**_. 
 
-# SPRINT 1
-Nessa sprint foi aprendido Sobre Git, Github e Linux, conteúdo bastante importante para a vida de um programador
+##Conteúdos das Sprints
 
-## GIT
-
-
-* `git innit`-cria um repositório
-* `git add` -Adiciona arquivos ao stage para serem incluídos no próximo commit.
-* `git commit` -Salva os arquivos e alterações
-* `git push` -Envia os commits para o repositório remoto
-* `git pull` -Atualiza o branchcom as mudanças do repositório remoto.
-
-## LINUX
+* [Sprint 1](Sprint1/)
+- [ ] [Sprint 2]
+- [ ] [Sprint 3]
+- [ ] [Sprint 4]
+- [ ] [Sprint 5]
+- [ ] [Sprint 6]
+- [ ] [Sprint 7]
+- [ ] [Sprint 8]
+- [ ] [Sprint 9]
