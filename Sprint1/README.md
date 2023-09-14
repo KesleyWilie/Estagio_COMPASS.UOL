@@ -4,7 +4,6 @@ Nessa sprint foi aprendido Sobre Git, Github e Linux, conteúdo bastante importa
 
 ### GIT
 
-
 * `git innit`- Cria um repositório
 * `git add` - Adiciona arquivos ao stage para serem incluídos no próximo commit.
 * `git commit` - Salva os arquivos e alterações
