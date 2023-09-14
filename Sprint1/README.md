@@ -1,6 +1,7 @@
 # SPRINT 1 
 ## GIT, GITHUIB, LINUX
-Nessa sprint foi aprendido Sobre Git, Github e Linux, conteúdo bastante importante para a vida de um programador principais códigos
+Nessa sprint foi aprendido Sobre Git, Github e Linux, conteúdo bastante importante para a vida de um programador.
+##### PRINCIPAIS CÓDIGOS
 
 ### GIT
 
