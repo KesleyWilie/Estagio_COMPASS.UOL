@@ -8,11 +8,14 @@ Entusiasta no mundo da tecnologia, estou muito feliz em fazer parte do programa 
 ## Sprints✍️
 
 - [X]  [Sprint 1](Sprint1/)
-- [ ] [Sprint 2]()
-- [ ] [Sprint 3]()
-- [ ] [Sprint 4]()
-- [ ] [Sprint 5]()
-- [ ] [Sprint 6]()
-- [ ] [Sprint 7]()
-- [ ] [Sprint 8]()
-- [ ] [Sprint 9]()
+- [ ] [Sprint 2](Sprint2/)
+- [ ] [Sprint 3](Sprint3/)
+- [ ] [Sprint 4](Sprint4/)
+- [ ] [Sprint 5](Sprint5/)
+- [ ] [Sprint 6](Sprint6/)
+- [ ] [Sprint 7](Sprint7/)
+- [ ] [Sprint 8](Sprint8/)
+- [ ] [Sprint 9](Sprint9/)
+      
+## Desafios
+- [ ] [Desfio](DESAFIO/)
