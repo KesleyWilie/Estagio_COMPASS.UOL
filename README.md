@@ -1,5 +1,5 @@
 ![compassuol](https://github.com/KesleyWilie/teste_atvd/assets/144160126/d832ee28-8bc8-4b0f-969c-4527ac9c5c92)
-# Olá! Sou Kesley Wilie✌️👋
+# Olá! Sou Kesley Wilie✌️👋  [![Kesley email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kesleywilie6@gmail.com)
 ## Sobre-mim
 Olá! Me chamo Kesley Wilie, moro em Camalaú-PB, tenho 19 anos e atualmente cursando o 2º período de Análise e Desenvolimento de Sistemas no IFPB-Campus Monteiro
 
