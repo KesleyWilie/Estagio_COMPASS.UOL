@@ -1,6 +1,7 @@
 # SPRINT 1 
-## GIT, GITHUIB, LINUX
+## GIT, GITHUB, LINUX
 Nessa sprint foi aprendido Sobre Git, Github e Linux, conteúdo bastante importante para a vida de um programador.
+
 ##### PRINCIPAIS CÓDIGOS
 
 ### GIT
@@ -12,5 +13,13 @@ Nessa sprint foi aprendido Sobre Git, Github e Linux, conteúdo bastante importa
 * `git pull` - Atualiza o branchcom as mudanças do repositório remoto.
 
 ### LINUX
+* `ls` - Lista todos os arquivos do diretório 
+* `top` - Mostra o uso da memória
+* `cd` - Acessa uma determinada pasta (diretório)
+* `cp` - Copia arquivos
+* `mkdir` - Cria um diretório
+* `rm` - Remove um arquivo/diretório
+* `cat` - Abre um arquivo
 
-[Certificados](CERTIFICADOS/)
+
+📁[Certificados](CERTIFICADOS/)
