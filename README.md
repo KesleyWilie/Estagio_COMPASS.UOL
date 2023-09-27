@@ -7,9 +7,9 @@ Entusiasta no mundo da tecnologia, estou muito feliz em fazer parte do programa 
 
 ## Sprints✍️
 
-- [X]  [Sprint 1](Sprint1/) **GIT, GITHUB e LINUX**
-- [ ] [Sprint 2](Sprint2/)
-- [ ] [Sprint 3](Sprint3/)
+- [X]  [Sprint 1](Sprint1/) **GIT, GITHUB, LINUX**
+- [X] [Sprint 2](Sprint2/) **SQL, BIG DATA**
+- [ ] [Sprint 3](Sprint3/) **PYTHON**
 - [ ] [Sprint 4](Sprint4/)
 - [ ] [Sprint 5](Sprint5/)
 - [ ] [Sprint 6](Sprint6/)
