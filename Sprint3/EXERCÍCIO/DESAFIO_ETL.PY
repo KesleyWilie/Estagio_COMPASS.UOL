@@ -25,11 +25,12 @@ def escrever_resultado_em_arquivo(arquivo_saida, resultado):
 # Leitura de dados
 dados_csv = ler_arquivo('actors.csv')
 #tratamendo de dados para o caso do Robert Downey Jr.
-
-dados_csv[5] = dados_csv[5].replace('"','').replace(',','',1)
-# Tratamento de dados para casos gerais como o do Robert Downey Jr.
 # Irá remover as aspas e substituir apenas a primeira vírgula dentro das aspas duplas
 
+dados_csv[5] = dados_csv[5].replace('"','').replace(',','',1)
+
+
+# Tratamento de dados para casos gerais como o do Robert Downey Jr.
 '''for i in range(len(dados_csv)):
     if '"' in dados_csv[i]:
         partes = dados_csv[i].split('"')
