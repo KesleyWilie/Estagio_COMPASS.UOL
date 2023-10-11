@@ -9,7 +9,7 @@ Entusiasta no mundo da tecnologia, estou muito feliz em fazer parte do programa 
 
 - [X]  [Sprint 1](Sprint1/) **GIT, GITHUB, LINUX**
 - [X] [Sprint 2](Sprint2/) **SQL, BIG DATA**
-- [ ] [Sprint 3](Sprint3/) **PYTHON**
+- [X] [Sprint 3](Sprint3/) **PYTHON**
 - [ ] [Sprint 4](Sprint4/)
 - [ ] [Sprint 5](Sprint5/)
 - [ ] [Sprint 6](Sprint6/)
@@ -19,3 +19,7 @@ Entusiasta no mundo da tecnologia, estou muito feliz em fazer parte do programa 
       
 ## Desafios
 - [ ] [Desafio](DESAFIO/)
+
+## Cultura Ágil e Segurança
+- [ ] [Segurança em Aplicações WEB](Segurança/)
+- [ ] [Métodos ágeis de A a Z: o curso completo](CulturaÁgil/)

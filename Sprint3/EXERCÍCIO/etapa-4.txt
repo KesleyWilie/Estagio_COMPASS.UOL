@@ -1,0 +1,29 @@
+4 - Filmes de maior bilheteria no dataset:
+The Avengers - Aparece 6 vez(es) no dataset
+Catching Fire - Aparece 4 vez(es) no dataset
+Harry Potter / Deathly Hallows (P2) - Aparece 4 vez(es) no dataset
+Meet the Fockers - Aparece 3 vez(es) no dataset
+Star Wars: The Force Awakens - Aparece 3 vez(es) no dataset
+The Dark Knight - Aparece 3 vez(es) no dataset
+Avengers: Age of Ultron - Aparece 2 vez(es) no dataset
+Dead Man's Chest - Aparece 2 vez(es) no dataset
+Night at the Museum - Aparece 2 vez(es) no dataset
+Return of the King - Aparece 2 vez(es) no dataset
+Shrek 2 - Aparece 2 vez(es) no dataset
+American Sniper - Aparece 1 vez(es) no dataset
+Hotel Transylvania 2 - Aparece 1 vez(es) no dataset
+Independence Day - Aparece 1 vez(es) no dataset
+Men in Black - Aparece 1 vez(es) no dataset
+Minions - Aparece 1 vez(es) no dataset
+Ocean's Eleven - Aparece 1 vez(es) no dataset
+Sixth Sense - Aparece 1 vez(es) no dataset
+The Dark Knight Rises - Aparece 1 vez(es) no dataset
+The Grinch - Aparece 1 vez(es) no dataset
+The LEGO Movie - Aparece 1 vez(es) no dataset
+The Martian - Aparece 1 vez(es) no dataset
+The Phantom Menace - Aparece 1 vez(es) no dataset
+Titanic - Aparece 1 vez(es) no dataset
+Toy Story 3 - Aparece 1 vez(es) no dataset
+Transformers 4 - Aparece 1 vez(es) no dataset
+War of the Worlds - Aparece 1 vez(es) no dataset
+World War Z - Aparece 1 vez(es) no dataset
