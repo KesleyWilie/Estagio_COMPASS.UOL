@@ -1,0 +1,39 @@
+FROM python
+
+WORKDIR /app
+
+COPY carguru.py .
+
+CMD ["python", "carguru.py"]
+
+No terminal:
+docker build -t image_carguru .
+docker run image_carguru
+----------------------------------------------------------------------------------------------------------------------------------
+2-
+Sim, é possível reutilizar containers Docker. Você pode reiniciar um container parado com o comando docker start <container_id>, onde <container_id> é o ID ou nome do container. Por exemplo:
+
+docker start image_canguru
+----------------------------------------------------------------------------------------------------------------------------------
+3-
+mascarar.py:
+
+import hashlib
+
+while True:
+    text = input("Digite uma string: ")
+    sha1_hash = hashlib.sha1(text.encode()).hexdigest()
+    print("Hash SHA-1:", sha1_hash)
+
+dockerfile:
+FROM python
+
+COPY mascarar.py /app/mascarar.py
+
+WORKDIR /app
+
+CMD ["python", "mascarar.py"]
+
+terminal:
+docker build -t mascarar-dados .
+docker run -it mascarar-dados
