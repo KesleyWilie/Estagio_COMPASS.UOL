@@ -10,7 +10,7 @@ Entusiasta no mundo da tecnologia, estou muito feliz em fazer parte do programa 
 - [X]  [Sprint 1](Sprint1/) **GIT, GITHUB, LINUX**
 - [X] [Sprint 2](Sprint2/) **SQL, BIG DATA**
 - [X] [Sprint 3](Sprint3/) **PYTHON**
-- [ ] [Sprint 4](Sprint4/)
+- [X] [Sprint 4](Sprint4/) **DOCKER, PROGRAMAÇÃO FUNCIONAL E ESTATÍDTICA COM PYTHON**
 - [ ] [Sprint 5](Sprint5/)
 - [ ] [Sprint 6](Sprint6/)
 - [ ] [Sprint 7](Sprint7/)
@@ -21,5 +21,5 @@ Entusiasta no mundo da tecnologia, estou muito feliz em fazer parte do programa 
 - [ ] [Desafio](DESAFIO/)
 
 ## Cultura Ágil e Segurança
-- [ ] [Segurança em Aplicações WEB](Segurança/)
-- [ ] [Métodos ágeis de A a Z: o curso completo](CulturaÁgil/)
+- [X] [Segurança em Aplicações WEB](Segurança/)
+- [X] [Métodos ágeis de A a Z: o curso completo](CulturaÁgil/)
