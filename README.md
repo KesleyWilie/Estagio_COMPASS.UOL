@@ -13,7 +13,7 @@ Entusiasta no mundo da tecnologia, estou muito feliz em fazer parte do programa 
 - [X] [Sprint 4](Sprint4/) **DOCKER, PROGRAMAÇÃO FUNCIONAL E ESTATÍDTICA COM PYTHON**
 - [X] [Sprint 5](Sprint5/) **FUNDAMENTOS DE COMPUTAÇÃO EM NUVEM ULTILIZANDO AWS**
 - [X] [Sprint 6](Sprint6/) **DATA & ANALYTICS COM AWS**
-- [ ] [Sprint 7](Sprint7/)
+- [x] [Sprint 7](Sprint7/) **APACHE SPARK E HADDOP**
 - [ ] [Sprint 8](Sprint8/)
 - [ ] [Sprint 9](Sprint9/)
       
