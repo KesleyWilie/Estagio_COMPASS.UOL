@@ -1,2 +1,8 @@
-# TESTE PARA O CONTADOR DE PALAVRAS 
-Testando
+# SPRINT 7
+## APACHE SPARK E HADOOP
+
+**Happy coding!** 🚀
+
+📁[Certificados](CERTIFICADOS/)
+
+📁[Exercícios](EXERCÍCIOS/)

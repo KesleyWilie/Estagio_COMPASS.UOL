@@ -1,0 +1,66 @@
+# Construir a imagem Docker
+docker build -t imagem-desafio .
+ 
+# Criar um volume Docker
+docker volume create --name=volume_desafio -d local --opt type=none --opt device=c:/Users/Kesley~1/COMPASS/SPRINT~1/Desafio --opt o=bind
+
+# Executar o contêiner Docker
+docker run -v volume_desafio:/app imagem-desafio
+
+
+
+
+
+
+
+
+
+meu teste inicial:
+import boto3
+import pandas
+import csv
+from datetime import datetime
+import os
+
+def upload_to_s3(file_path, bucket_name, storage_layer, data_source, data_format):
+    # Configurar o cliente S3 com credenciais temporárias
+    s3_client = boto3.client('s3')
+
+    # Configurar o caminho no S3 usando o padrão fornecido
+    current_date = datetime.now().strftime("%Y/%m/%d")
+    file_name = os.path.basename(file_path)
+    s3_key = f"{storage_layer}/{data_source}/{data_format}/{current_date}/{file_name}"
+
+    # Upload do arquivo para o S3
+    s3_client.upload_file(file_path, bucket_name, s3_key)
+
+def ingest_to_s3(csv_file, bucket_name, storage_layer, data_source, data_format):
+    with open(csv_file, 'rb') as data:
+        upload_to_s3(data.name, bucket_name, storage_layer, data_source, data_format)
+
+if __name__ == "__main__":
+    # Recuperar informações necessárias das variáveis de ambiente
+    bucket_name = 'data-lake-kesley'
+    storage_layer = 'Raw'
+    data_source_movies = 'Movies'
+    data_source_series = 'Series'
+    data_format = 'CSV'
+    
+    aws_access_key_id = 'ASIA5FZDYDWQDMYDPY6J'
+    aws_secret_access_key = 'NmGj8Z/T81Q7/ow9hYaQNTMNO50Bq1q3mm4g9BIW'
+    aws_session_token = 'IQoJb3JpZ2luX2VjEJT//////////wEaCXVzLWVhc3QtMSJIMEYCIQDDtGAG565/mGlUdOfp2asDiUCYoWVyZcN+NelURONbBQIhAKFFe83hPiCPCqYop/mrENlaPlKgFSQ5PpLtbiuBAbaPKqgDCP3//////////wEQABoMOTA1Nzc2MjA5MzEyIgz2TsmVk3OGtzx+NAIq/AIko8w9LMS1p9Zr1iMo2J37Uq+rQ4aXjKsKgyismIYihaqs9vGlaNRYiVtxflRKNC1pDh4m8SQzaGYs3Vf0sSqBHpj5pckBh+az4k090VawxxZyGhyK10pVY37MrViuN8c7Ow5ofUlwWWDR1vA0RJt0WbOQhPLcc+8UemdadAHJ/vdOQGMQvncPh0VoKn1Ne2lYdTdyp4rfLLDkZ3XfqJS5oQLhZe6JKC1iG98Lz81gLfcw4i6ObFmQbSJA7dq4/j2PuELcwckAcEq1gadRpwMthMAdP+vkhlv7FEJBsp7c8rWdkUTS7Mz32VyUN+VsePVZb/3Fit2JC1tPVITdUxHtsM3tkOswfMr0asRZY11GBbQZHNFIHqSNrAMZzbvZywxlmBHRUilGSg4Su/79VpsLXz0oX4rmLPwsFBw+JAZImvrR/AUED6h4uC8VgHJnX76b9PlKU9iaPpGCvXu33n7JXG3WHNTYzkV5DsHOCrWJcJt44q6b5feRanAotzCngdqrBjqlAVCMOZXeVHXfG+zFnU/fXxk6iuxOxoLNcOjFNfmiuPIqNB8N7G/9fMv7/iJ9i3vLPgdtjApRrEfCzyW62C8Ts8GaxuadPm5y2jWQFwSxBFrBbVE6V8CxsGQbcJj/SP9i3jivI7hbKHtYaR0o856Q490IqqOW6U+Mf7zmdtcu63Xg4HmIMWQ/8yQyh0Mqqti++cFPaUl0w9vROsgECfc0SqkRZPXwlw=='
+
+    # Ingestão de filmes
+    #ingest_to_s3('C:\\Users\\Kesley Wilie\\COMPASS\\SPRINT 7\\Projeto\\Desafio\\movies.csv', bucket_name, storage_layer, data_source_movies, data_format, aws_access_key_id, aws_secret_access_key, aws_session_token)
+
+    ingest_to_s3("C:\Users\Kesley Wilie\COMPASS\SPRINT 7\Projeto\Desafio\movies.csv" ,bucket_name, storage_layer, data_source_movies, data_format)
+
+    #ingest_to_s3('C:/Users/Kesley Wilie/COMPASS/SPRINT 7/Projeto/Desafio/movies.csv', bucket_name, storage_layer, data_source_movies, data_format)
+
+    # Ingestão de séries
+    #ingest_to_s3('C:\\Users\\Kesley Wilie\\COMPASS\\SPRINT 7\\Projeto\\Desafio\\series.csv', bucket_name, storage_layer, data_source_movies, data_format, aws_access_key_id, aws_secret_access_key, aws_session_token)
+
+    ingest_to_s3("C:/Users/Kesley Wilie/COMPASS/SPRINT 7/Projeto/Desafio/series.csv", bucket_name, storage_layer, data_source_series, data_format)
+
+
+
