@@ -5,8 +5,9 @@ from awsglue.utils import getResolvedOptions
 from pyspark.context import SparkContext
 from awsglue.context import GlueContext
 from awsglue.job import Job
+from awsglue.dynamicframe import DynamicFrame
 
-## @params: [JOB_NAME]
+# @params: [JOB_NAME, S3_INPUT_PATH, S3_TARGET_PATH]
 args = getResolvedOptions(sys.argv, ['JOB_NAME', 'S3_INPUT_PATH', 'S3_TARGET_PATH'])
 
 # Inicializo as configurações do Spark e do Glue
@@ -20,27 +21,30 @@ job.init(args['JOB_NAME'], args)
 source_file = args['S3_INPUT_PATH']
 target_path = args['S3_TARGET_PATH']
 
-# Carrego os dados do CSV
+# Carrego os dados do CSV diretamente, convertendo as colunas 'total' e 'ano' para inteiros
 dynamic_frame = glueContext.create_dynamic_frame.from_options(
     "s3",
     {"paths": [source_file]},
     "csv",
     {"withHeader": True, "separator": ","},
+    transformation_ctx="dynamic_frame"
 )
 
+# Converto 'total' e 'ano' para inteiros
+dynamic_frame = dynamic_frame.resolveChoice(specs=[('total','cast:int'), ('ano','cast:int')])
+
 # Ordene os dados pelo ano de forma decrescente
-dynamic_frame.toDF().sort(col('ano').desc())
+sorted_dynamic_frame = DynamicFrame.fromDF(dynamic_frame.toDF().sort(col('ano').desc()), glueContext, "sorted_dynamic_frame")
 
 # Imprimo o schema do dataframe gerado
-dynamic_frame.printSchema()
+sorted_dynamic_frame.printSchema()
 
-# Altero a caixa dos valores da coluna nome para MAIÚSCULO
-dynamic_frame = dynamic_frame.apply_mapping([
+# Altero a caixa dos valores da coluna 'nome' para MAIÚSCULO e outros mapeamentos
+dynamic_frame = sorted_dynamic_frame.apply_mapping([
     ("nome", "string", "NOME", "string"),
-    ("outras_colunas", "string", "outras_colunas", "string"),
     ("ano", "int", "ano", "int"),
     ("sexo", "string", "sexo", "string"),
-    ("total", "int", "total", "int")  # Adicione esta linha para incluir a coluna 'total'
+    ("total", "int", "total", "int")
 ])
 
 # Imprimo a contagem de linhas presentes no dataframe
@@ -49,9 +53,6 @@ print("Contagem de linhas:", dynamic_frame.count())
 # Imprimo a contagem de nomes, agrupando os dados pelas colunas ano e sexo
 count_by_ano_sexo = dynamic_frame.toDF().groupBy('ano', 'sexo').agg({'total': 'sum'}).sort('ano', ascending=False)
 count_by_ano_sexo.show(10, truncate=False)
-
-#df_count = dynamic_frame.fromDF(df.toDF().groupBy("ano", "sexo").count().orderBy("ano", ascending=False),glueContext,)
-#df_count.toDF().show()
 
 # Apresento qual foi o nome feminino com mais registros e em que ano ocorreu
 max_female_name = dynamic_frame.toDF().filter(col('sexo') == 'F').orderBy('total', ascending=False).first()
