@@ -11,4 +11,4 @@ Este projeto envolve a normalização da base de dados de uma concessionária co
 
 ## Estrutura do Banco de Dados Normalizado
 
-![imagem](exe1/imagem-exe1.jpeg)
+![imagem](/imagem-exe1.jpeg)
