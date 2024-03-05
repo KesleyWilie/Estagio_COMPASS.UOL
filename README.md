@@ -15,10 +15,10 @@ Entusiasta no mundo da tecnologia, estou muito feliz em fazer parte do programa 
 - [X] [Sprint 6](Sprint6/) **DATA & ANALYTICS COM AWS**
 - [X] [Sprint 7](Sprint7/) **APACHE SPARK E HADDOP**
 - [X] [Sprint 8](Sprint8/) **DESAFIO AWS LAMBDA, SPARK, E API TMDB**
-- [ ] [Sprint 9](Sprint9/)
+- [X] [Sprint 9](Sprint9/) **DASHBOARD**
       
 ## Desafios
-- [ ] [Desafio](DESAFIO/)
+- [X] [Desafio](DESAFIO/) **CRIME EM DESTAQUE**
 
 ## Cultura Ágil e Segurança
 - [X] [Segurança em Aplicações WEB](Segurança/)
